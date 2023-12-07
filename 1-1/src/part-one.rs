@@ -6,12 +6,14 @@ fn main() -> std::io::Result<()> {
     let mut file = File::open("testcase/input.txt")?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
+    // How the data is extrapolated into usable strings.
     println!("{}", &contents);
     let calibrated: Vec<i64> = Solution::read_value(&contents);
     let calibrated_sum = Solution::calibrate_value(calibrated);
     println!("Calibration Sum: {}", calibrated_sum);
     Ok(())
 }
+
 
 struct Solution;
 
