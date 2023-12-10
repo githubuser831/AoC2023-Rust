@@ -11,6 +11,8 @@ fn main() -> std::io::Result<()> {
     Ok(())
 }
 
+//How text is handled into strings
+
 struct Solution;
 
 impl Solution {
