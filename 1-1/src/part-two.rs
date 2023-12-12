@@ -24,7 +24,8 @@ impl Solution {
     }
     fn evaluate(contents: &String) -> String {
         let ab = Regex::new("zero|one|two|three|four|five|six|seven|eight|nine").unwrap();
-        let tempchars: Vec<char> = contents.collect().reverse();
+        let reverse: String = contents.chars().rev().collect();
         let ba = Regex::new("orez|eno|owt|eerht|ruof|evif|xis|neves|thgie|enin|").unwrap();
+        print!("{}", reverse);
     }
 }
